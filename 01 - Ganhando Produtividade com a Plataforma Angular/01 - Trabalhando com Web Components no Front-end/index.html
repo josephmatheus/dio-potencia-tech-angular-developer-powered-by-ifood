@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portal de Notícias Galáticas</title>
-    <link rel="stylesheet" href="./assets/styles/card.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles/card.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>Joseph Matheus</span>
-                <a href="#">Darth Vader Contrata Devs</a>
-                <p>Darth Vader procura desenvolvedores que saibam trabalhar com componentes.</p>
-            </div>
-            <div class="card__right">
-                <img src="./assets/images/asset-vader.png" alt="">
-            </div>
-        </div>
+      <card-news
+        autor="Joseph"
+        title="Darth Vader Contrata"
+        link-url="#"
+        photo="./assets/images/asset-vader.png"
+        content="Darth Vader procura desenvolvedores que saibam trabalhar com
+            componentes."
+      >
+      </card-news>
+      <card-news
+        title="Yoda Convence República a Utilizar Componentes"
+        link-url="#"
+        content="Yoda se pronuncia e choca a república"
+      >
+      </card-news>
     </div>
 
-    <card-news></card-news>
     <titulo-dinamico titulo="Notícia Urgente"></titulo-dinamico>
     <titulo-dinamico titulo="Novo Título"></titulo-dinamico>
 
     <script src="./src/components/CardNews.js"></script>
     <script src="./src/components/TituloDinamico.js"></script>
-</body>
+  </body>
 </html>
