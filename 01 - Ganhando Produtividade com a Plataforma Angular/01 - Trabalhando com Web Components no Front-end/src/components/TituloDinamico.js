@@ -6,7 +6,7 @@ class TituloDinamico extends HTMLElement {
 
     // base componente <h1>Joseph</h1>
     const componentRoot = document.createElement("h1");
-    componentRoot.textContent = "Joseph";
+    componentRoot.textContent = this.getAttribute("titulo");
 
     // estiliza o componente
     const style = document.createElement("style");
