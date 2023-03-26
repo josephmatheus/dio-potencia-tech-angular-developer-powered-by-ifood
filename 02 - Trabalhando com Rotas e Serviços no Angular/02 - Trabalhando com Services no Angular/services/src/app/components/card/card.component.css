@@ -23,6 +23,13 @@
   margin-left: auto;
   margin-right: auto;
   height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__body img {
+  width: 100%;
 }
 
 .card__stats {
@@ -41,8 +48,4 @@
   margin-right: 4px;
 }
 
-.card__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
